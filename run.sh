@@ -1,1 +1,1 @@
-./node_modules/forever/bin/forever start request-handler.js
+./node_modules/forever/bin/forever start -o console.log -e error.log request-handler.js
