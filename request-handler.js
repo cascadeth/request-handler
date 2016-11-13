@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 343);
+app.set('port', 2401);
 var portString = String( app.get('port') );
 
 // End of requireables ###################################################################################################
