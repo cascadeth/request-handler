@@ -6,7 +6,8 @@ var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 var bodyParser = require('body-parser');
 
-var colors = require('colors');
+var colors = require('colors');  // Only useable if run with 'node', forever will not append colors in logs
+var timestamps = require('log-timestamp');  // Prepend timestamps to console.log() outputs
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
